@@ -1,0 +1,21 @@
+ln <kaynak> <hedef>    			kısayol
+grep <aradıgın yazı> <dosya adı>  	yazıyı bulma
+find <klasor adı>  			içindeki dosyaları bulma
+
+sudo useradd -m <kullanıcı adı>     kullanıcı ekle
+sudo passwd <kullanıcı adı> 	    şifre belirle
+sudo userdel -r <kullanıcı adı>     kullanıcıyı sil
+
+echo    içerik görüntüle/değiştir
+
+sudo chown <sahip:grup> <dosya/klasor>  doysanın sahibini değiştir(sahip yerine root veya global)
+ls -l     doysalar ne zaman oluşturuldu
+chmod <777> <dosya adı>  (4Read ,  2Write , 1eXecute)
+
+
+tar -cvzf <arsiv adı<sıkıstırılacaklar>
+tar -xvf <arsiv adı>
+
+
+
+

@@ -1,0 +1,169 @@
+x=getchar() //input
+putchar(x)   //output
+----
+puts
+gets
+------
+fgetc
+fputc(cp[],fp)
+------------------
+assembly
+-----------------Bil101 final-----------------
+Ebob fonksiyonla ve fonksiyona pointerla geçir
+Programlama dillerine neden ihtiyaç var ve low high level dillerin farkları ve avantaj dezavantajları
+Alu nedir pcdeki görevi ve van neumann computer modeli 
+Linked listte elemanları sayan fonksiyon*****
+Herhangi bir 8bitlik sayıyı 2 ye böl
+---------------Bil101 büt soruları------------
+1 dosyada verilen kelimenin olup olmadığını kontrol et
+2 structları neden kullanıyoz açıkla örnek ver
+3 arrayin en büyük 2.elemanını bulan fonk******
+4 -64 ün binarysi ve c7a0 ın decimalı 
+B floating point gösterimi nasıl olur 32 bitte örnekle açıkla
+5 linked listin son elemanını silen fonksiyon
+-------
+Yüksek seviyeli programlama
+1950'lerde yüksek seviyeli programlama adında yeni bir programlama paradigması ortaya çıkmıştır. Bu yaklaşıma göre donanım hakkındaki detayları bilmeye gerek duymaksızın çok kompleks programlar yazmak kolay hale gelmiştir.
+Faydaları
+Yüksek seviyeli programlama dilinin en önemli özelliği yüksek seviyeli soyutlama (abstraction) sağlamasıdır. Programcı artık sadece problemin çözümüne odaklanmaktadır ve çok daha az komut kullanarak geliştirme yapabilmektedir. Ayrıca bu dillerde kullanılan komutlar insanların kolay şekilde anlayabileceği ve akılda kalıcı haldedir.
+r. Bu nedenle derlenmiş kodun yorumlayıcıya(interpreter) nispetle daha verimli (hızlı) çalışması beklenir.
+--------------
+Alt seviyeli
+"alt seviyeli" ifadesinden kasıt bu tipteki dillerin makine diline olan benzerliğdir. Bu diller aynı zamanda donanım (hardware) ile yakından ilişkilidir. Yani bir tip donanım için yazılan kod, başka bir donanım tipi için uygun değildir.
+Alt seviyeli programlama dillerinin makine diline çevrilmesi için (donanım üzerinde çalışması için) bir derleyiciye (compiler) ya da yorumlayıcıya (interpreter) ihtiyaç duyulmaz.
+***Faydalar
+Alt seviyeli programlama dilinde yazılmış kodlar çok hızlı çalışır. Aynı kodun yüksek seviyeli programlama dili ile yazılmış hali daha verimsiz çalışır ve daha fazla bellek (memory) kaplar.
+
+***Zorluklar
+Alt seviyeli programlama dillerinin komutları basittir fakat programıcının çok fazla detayla ilgilenmesi (bellek işlemlerinin detayları gibi) gerektiği için geliştirme yapılması bir hayli zordur.
+--------------
+c'de kullandıgını ramden alabiliyorsun ama javada bunu yapamazsın.
+-----------------
+Without a programming language, is available, machine code, bits, values, only numbers, and a program written with this, will work any way, computers can understand easily these codes, programmers, can build applications directly on machine code, and a program can work, but programming language, gives abstraction to make more human readable, the way the programmers do things, at the end, programming languages codes are translated to only machine friendly numerical codes, and program will work, programming in machine code needs a programmer to concern to much, with hardware details, for making the program work, it takes so much preparation, to know all hardware details to make the things work this way, programming languages, releases this requirement making the programmers concern mostly in the program logic, than specifically, hardware details, this makes programming cycle shorter, programming languages include libraries, with functions that minimizes the reinventing the wheel, that is mandatory in machine code, that almost anything should be made starting in zero, if is available, some kind of library, machine codes, to copy and paste in your machine code program, you recognize the need of this characteristic so mature in a programming language, with machine code, there is not an compiler or interpreter, helping you to find errors, in your work, it will take you so much more time, debugging in machine code than using a programming language, and its tools.It is true, that programming languages, are no so optimal translated finally in machine code to same velocity in execution, for the computer to understand, but it is enough, this translating, to argue, the program anyway will work fast enough, even similar velocity, in both cases, a big application will take so much concerns to be made in machine language, the code will be very unreadable, pure numbers, and is possible that with this code programmed this way, the goal of it will be forgotten, so easy, it will be hard to remember what was this code made for, programing languages have these problem anyway, but is a code easier to interpretate, than pure numerics list of orders. Because programming languages give more tools to program, bucles, conditional sentences, variables, etc, a more structured, way, it is interpreted as more power for programing, shorter life cycle to archieve same results, anyway some programming languages, offers some “interfaces”, to work low level code, it is posible, in some languages, to have modules made in assembler, that is like machine code, but a little more readable, is very like machine code, but it have, some names for actions, that the programmer is making. Is recommended use these “interfaces”, for only the code that deppends drastically on speed, a low percentage, of the full program
+----------------
+To advance your ability to develop real algorithms
+To increase the ability to express ideas
+to Improve Customize Your Existing Programming Language
+To Increase Your Vocabulary Of beneficial Programming Constructs:
+------------------
+1bit işaret
+8bit üst
+23 bit anlamlı kısım
+-------------
+13(10) = 1101(2)x20 = 110,1(2)x21 = 11,01(2)x2^2 = 1,101(2)x2^3 = 0,1101x2^4
+
+Son şekliyle ele alırsak, işaret biti 0, anlamlı kısım 11010000(kalana 0ekle) ve üst 00101 olacaktır.
+*(p+9)=p[9]
+-------------
+int *ptr=malloc(sizeof(int);
+free(ptr)
+-------------
+strcmp(s1,s2):s1 ile belirtilen karakter dizesi ile s2 karakter dizesinin
+karşılaştırılmasını sağlar. Bu karşılaştırma sonucunda iki değer eşit ise
+54/17.10.2007 01:35:00 PM 62
+C Programlama Ders Notları
+sonuç 0, birincisi büyük ise sonuç pozitif, ikincisi büyük ise sonuç negatif
+olarak döndürülür.
+------------
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+const char *words[] = { "cat", "dog", "snake", "bee" };
+
+int main()
+{
+  char line[200];   // maximum line size is 200
+  size_t len = 0;
+
+  FILE *f;
+  f = fopen("test.txt", "r");
+
+  if (f == NULL)
+  {
+    printf("Can't open file\n");
+    return 1;
+  }
+
+  int line_no = 0;
+  while (fgets(line, sizeof line, f))
+  {
+    ++line_no;
+
+    // (sizeof words)/sizeof *words is the the number of words in the words array
+    for (int i = 0; i < (sizeof words)/sizeof *words; i++) 
+    {
+      if (strstr(line, words[i]) != NULL)
+      {
+        printf("found %s in line %d\n", words[i], line_no);
+      }
+    }
+  }
+-------------------
+A struct in the C programming language (and many derivatives) is a composite data type (or record) declaration that defines a physically grouped list of variables under one name in a block of memory, allowing the different variables to be accessed via a single pointer or by the struct declared name which returns the same address. The struct data type can contain other data types so is used for mixed-data-type records such as a hard-drive directory entry (file length, name, extension, physical address, etc.), or other mixed-type records (name, address, telephone, balance, etc.).
+-------------------
+https://www.edx.org/course/cs50s-introduction-computer-science-harvardx-cs50x
+
+Burada dersi ücretsiz alabilirsin. İstersen sertifikada alabiliyorsun daha sonra ama o ücretli. Youtube dakiler sadece video. Burada materyallerde var
+------------------
+Arkadaşlar selamlar, zamanında drive ıma atmıştım öyle. Burda pdf ler var. takılmak isterseniz.. 
+https://drive.google.com/drive/folders/0B6jZI1tDzr5gVG1QZzVRS2xtSWs?usp=sharing
+Bu da Harvard CS50
+https://www.youtube.com/watch?v=y62zj9ozPOM&list=PLJAZR8XXeiLCqJcINmHVwlGEeWDNeRDhV
+-------------------
+[10:04, 07/01/2020] ~: “Transaction” Commit (Onaylama)komutu çalışır ve değişiklikler veritabanında gerçekleşmiş olur. Eğer herhangi bir hata oluşursa bu işleyiş bozulur ve hepsi geri alınır o zamanda “transaction” Rollback (Geridönüş) komutu çalışır. Böylece tüm işlemler geri alınır ve en başa dönülür. Bunu yaparak veri kaybetme olasılığımız da sıfıra iner. Aşağıdaki şekilde transaction olayını özetleyerek daha da görsel boyuta taşımak istedik.
+[10:05, 07/01/2020] ~: Kısaca Transaction için SQL Server ortamında kullandığımız iş birimidir diyebiliriz. Çoğu zaman bir transaction yalnızca bir türde işlem yapar, yani sadece veri silme, veri güncelleme veya veri ekleme gibi tek türde işlem yapar. Ama bir transaction içinde birden fazla da işlem yapılabilir. Yine transaction içinde SELECT işlemleri de yapılabilmektedir. Peki bunlar bizim bildiğimiz şeyler, neden transaction çıktı ki birden dediğinizi duyar gibiyim.
+[10:06, 07/01/2020] ~: Transaction, daha küçük parçalara ayrılamayan en küçük işlem yığınına denir. Belirli bir grup işlemin arka arkaya gerçekleşmesine rağmen, işlemlerin toplu olarak değerlendirilmesini sağlar. “Transaction”, prensip olarak ya bütün işlemleri gerçekleştirir ya da hiçbirini gerçekleştirmez. İşlemlerden biri dahi başarısız olursa, bu prensip nedeniyle hiçbir işlem olmamış kabul edilir; ancak tüm işlemler başarılı olduğunda” transaction”, içinde gerçekleşen tüm veri değişikliklerini onaylamış demektir. Bu işlemlerin ardı arkasına gelince bir tanesinin bile gerçekleşmemesi veri kaybına neden olacağı anlamına gelmektedir. Bu işlemler sırasında veriler üzerindeki değişikliklerin de tutarlı olması, birbirlerini tamamlayıcı nitelik taşıması gerekir. Bu özellikleri sağlayabilmesi içintransaction kavramı ortaya atılır. Veri tabanı uygulamaları geliştirirken böyle bir hataya sebep olacakları da düşünerek transaction bloğunun içine alınarak işlemler yapılır. Böylece ya hepsi işlenir ya da bütün işlemler geri alınır.
+----------------
+CBReference
+
+pros-
+
+Since arguments are not copied into the new variables, it provides greater time and space efficiency.
+The function can change the value of the argument and the change is reflected in the calling function.
+A function can return only one value. In case we need to return multiple values, we can pass those arguments by reference, so that the modified values are visible in the calling function
+cons-
+
+However, the drawback of using this technique is that if inadvertent changes are caused to variables in called function then these changes would be reflected in calling function as original values would have been overwritten.
+--------------------
+Recursive Fonksiyon Avantajları
+Bazı durumlarda çok hızlı çalışır.
+Genellikle çok az satır işlemde fonksiyonu yazabilirsiniz. Bu sayede okuması kolay kodlar yazabilirsiniz.
+Recursive Fonsiyon Dezavantajları
+Bazı dururumlar sürekli aynı işlemi yapabilir. Bu durumlarda iteratif fonksiyonlara göre yavaş olur.
+Recursive işlemler Stack’de tutulduğundan bellek sorunu ortaya çıkabilir
+--------
+recursive fonksiyon örneğiC
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+#include <stdio.h>
+ 
+int faktoriyel(int);
+ 
+int main() {
+    int sayi = 4;
+    int sonuc = faktoriyel(sayi);
+    printf("%d! = %d\n", sayi, sonuc);
+    return 0;
+}
+ 
+int faktoriyel(int x) {
+    if (x <= 1)
+        return 1;
+    return x * faktoriyel(x - 1);
+}
+----------------
